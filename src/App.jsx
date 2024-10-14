@@ -13,7 +13,7 @@ const App = () => {
   const{socket,setSocket} = useContext(SocketContext)  
   useEffect(()=>{
       if(user){
-          const socket = io('http://localhost:5000',{
+          const socket = io('https://web-chats-apis.onrender.com',{
               query:{
                   userId : user._id
               }
